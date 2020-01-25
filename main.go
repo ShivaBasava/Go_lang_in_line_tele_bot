@@ -70,7 +70,7 @@ func main() {
         ShowAlert: false,
     })
         // Send messages here	play()
-    b.Send(c.Sender, "Play says 'Hi'!")
+    b.Send(c.Sender, "Play---- STAY tunned!")
 })
 
 
@@ -83,9 +83,7 @@ func main() {
         ShowAlert: false,
     })
         // Send messages here	about()
-    b.Send(c.Sender, "About-------------
-	
-	From a time-pass Engineer @TympazEngineer")
+    b.Send(c.Sender, "About---- From a time-pass Engineer @TympazEngineer")
 })
 
 
@@ -98,7 +96,7 @@ func main() {
         ShowAlert: false,
     })
         // Send messages here	stop()
-    b.Send(c.Sender, "Stop says 'Hi'!")
+    b.Send(c.Sender, "Stop---- STAY tunned!")
 })
 	
 		
