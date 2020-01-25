@@ -32,21 +32,21 @@ func main() {
 	}
 
 	
-	 //for inline keybord buttons, Defining buttons
+	/* //for inline keybord buttons, Defining buttons
 	
 	inlineBtn1 := tb.InlineButton{
     Unique: "play",
-    Text:   "Play 🌚",
+    Text:   "Play ??",
 	}
 	
 	inlineBtn2 := tb.InlineButton{
     Unique: "about",
-    Text:   "About 🌚",
+    Text:   "About ??",
 	}
 	
 	inlineBtn3 := tb.InlineButton{
     Unique: "stop",
-    Text:   "Stop 🌚",
+    Text:   "Stop ??",
 	}
 	
 	
@@ -83,7 +83,9 @@ func main() {
         ShowAlert: false,
     })
         // Send messages here	about()
-    b.Send(c.Sender, "About says 'Hi'!")
+    b.Send(c.Sender, "About-------------
+	
+	From a time-pass Engineer @TympazEngineer")
 })
 
 
@@ -102,7 +104,7 @@ func main() {
 		
 	
 	
-	
+	*/
 	
 	
 	
