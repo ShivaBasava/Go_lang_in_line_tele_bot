@@ -36,17 +36,17 @@ func main() {
 	
 	inlineBtn1 := tb.InlineButton{
     Unique: "play",
-    Text:   "Play ▶️",
+    Text:   "Play ▶",
 	}
 	
 	inlineBtn2 := tb.InlineButton{
     Unique: "about",
-    Text:   "About ℹ️",
+    Text:   "About ℹ",
 	}
 	
 	inlineBtn3 := tb.InlineButton{
     Unique: "stop",
-    Text:   "Stop 🚫",
+    Text:   "Stop ⛔",
 	}
 	
 	
