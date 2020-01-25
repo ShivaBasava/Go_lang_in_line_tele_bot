@@ -32,7 +32,7 @@ func main() {
 	}
 
 	
-	/* //for inline keybord buttons, Defining buttons
+	 //for inline keybord buttons, Defining buttons
 	
 	inlineBtn1 := tb.InlineButton{
     Unique: "play",
@@ -102,7 +102,7 @@ func main() {
 		
 	
 	
-	*/
+	
 	
 	
 	
