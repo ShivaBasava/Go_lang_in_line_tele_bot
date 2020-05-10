@@ -83,7 +83,7 @@ func main() {
         ShowAlert: false,
     })
         // Send messages here	about()
-    b.Send(c.Sender, "About---- From a time-pass Engineer @TympazEngineer")
+    b.Send(c.Sender, "About---- From a time-pass Engineer🥺 @TympazEngineer")
 })
 
 
@@ -96,17 +96,10 @@ func main() {
         ShowAlert: false,
     })
         // Send messages here	stop()
-    b.Send(c.Sender, "Stop---- STAY tunned!")
+    b.Send(c.Sender, "👋 Play again later after a while🤓!!!")
 })
 	
-		
 	
-	
-	
-	
-	
-	
-//b.Handle("/hello", func(m *tb.Message) {
 
 	b.Handle("/start", func(m *tb.Message) {
 		
