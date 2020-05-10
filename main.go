@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"os"
-
+	"time"
 	tb "gopkg.in/tucnak/telebot.v2"
 )
 
@@ -14,8 +14,7 @@ func main() {
 		token     = os.Getenv("TOKEN")      
 	)
 	
-	
-
+// Webhook	
 	webhook := &tb.Webhook{
 		Listen:   ":" + port,
 		Endpoint: &tb.WebhookEndpoint{PublicURL: publicURL},
@@ -30,9 +29,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	
-	 //for inline keybord buttons, Defining buttons
+//for inline keybord buttons, Defining buttons
 	
 	inlineBtn1 := tb.InlineButton{
     Unique: "play",
@@ -50,7 +48,7 @@ func main() {
 	}
 	
 	
-	// Need to defne a keyboard for buttons
+// Need to defne a keyboard for buttons
 	
 	
 	inlineKeys := [][]tb.InlineButton{
@@ -62,7 +60,6 @@ func main() {
 	
 	
 		//----Btn1
-	
 	
 	b.Handle(&inlineBtn1, func(c *tb.Callback) {
         // Required for proper work
@@ -76,7 +73,6 @@ func main() {
 
 		//----Btn2
 		
-		
 	b.Handle(&inlineBtn2, func(c *tb.Callback) {
         // Required for proper work
     b.Respond(c, &tb.CallbackResponse{
@@ -86,9 +82,7 @@ func main() {
     b.Send(c.Sender, "About---- From a time-pass Engineer🥺 @TympazEngineer")
 })
 
-
-		//----Btn3
-		
+		//----Btn3		
 		
 	b.Handle(&inlineBtn3, func(c *tb.Callback) {
         // Required for proper work
@@ -97,8 +91,10 @@ func main() {
     })
         // Send messages here	stop()
     b.Send(c.Sender, "👋 Play again later after a while🤓!!!")
+		
+		time.Sleep(2 * time.Second)
+		b.Stop()
 })
-	
 	
 
 	b.Handle("/start", func(m *tb.Message) {
@@ -114,7 +110,6 @@ func main() {
 	//	Auth()
 	//	b.Send(m.Sender, "Authentificating...")
 	//})
-	
 	
 	
 
